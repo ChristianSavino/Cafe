@@ -45,11 +45,11 @@
         },
         {
             "nombre": "Hierbas",
-            "descripcion": "Yerba Buenas y Santas con posibilidad de combinar con yerba tradicional."
+            "descripcion": "Yerba (Buenas y Santas o Verdeflor) con posibilidad de combinar con yerba tradicional."
         },
         {
             "nombre": "Coco",
-            "descripcion": "Mix de yerba común y yuyos con coco rallado."
+            "descripcion": "Mix de yerba común y hierbas con coco rallado."
         }
     ],
     "🍵 Té": [
