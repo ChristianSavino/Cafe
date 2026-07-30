@@ -210,7 +210,7 @@ body{
 
 .card{
 
-    background:var(--card);
+    background:rgba(19, 0, 44, 0.2);
 
     border:1px solid #292929;
 
