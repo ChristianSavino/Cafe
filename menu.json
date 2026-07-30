@@ -30,7 +30,8 @@
         },
         {
             "nombre": "Keru's Mocha",
-            "descripcion": "Espresso con chocolate blanco derretido en leche."
+            "descripcion": "Espresso con chocolate blanco derretido en leche.",
+            "especial":true
         },
         {
             "nombre": "Baileys'",
@@ -43,11 +44,11 @@
             "descripcion": "Amargo o dulce."
         },
         {
-            "nombre": "de Yuyos",
+            "nombre": "Yuyos",
             "descripcion": "Yerba Buenas y Santas con posibilidad de combinar con yerba tradicional."
         },
         {
-            "nombre": "Con coco",
+            "nombre": "Coco",
             "descripcion": "Mix de yerba común y yuyos con coco rallado."
         }
     ],
@@ -88,7 +89,8 @@
         },
         {
             "nombre": "Belu's Terma Limón",
-            "descripcion": "40% Terma, 60% Soda."
+            "descripcion": "40% Terma, 60% Soda.",
+            "especial":true
         }
     ],
     "🥛 Otros": [

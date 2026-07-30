@@ -1,14 +1,16 @@
 :root{
 
-    --gold:#be69f7;
-    --gold-soft:#65408f;
+    --accent:#be69f7;
+    --accent-soft:#65408f;
 
-    --bg:#090909;
-    --card:#171717;
+    --background:#090909;
+    --card:#161616;
 
     --text:#f2f2f2;
+    --muted:#a8a8a8;
 
 }
+
 
 *{
 
@@ -18,9 +20,10 @@
 
 }
 
+
 body{
 
-    background:var(--bg);
+    background:var(--background);
 
     color:var(--text);
 
@@ -30,25 +33,47 @@ body{
 
 }
 
+
 .background{
 
     position:fixed;
 
     inset:0;
 
+    z-index:-1;
+
     background:
 
-    radial-gradient(circle at top,#1f152c 0%,transparent 40%),
+        radial-gradient(
+            circle at top,
+            rgba(31,21,44,.85) 0%,
+            transparent 45%
+        ),
 
-    radial-gradient(circle at bottom,#1a1a1a 0%,#090909 70%);
+        radial-gradient(
+            circle at bottom,
+            rgba(26,26,26,.75) 0%,
+            rgba(9,9,9,.85) 70%
+        ),
 
-    z-index:-1;
+        linear-gradient(
+            rgba(9,9,9,.55),
+            rgba(9,9,9,.80)
+        ),
+
+        url("img/bar.jpg");
+
+
+    background-size:cover;
+
+    background-position:center;
 
 }
 
+
 .container{
 
-    width:min(720px,92%);
+    width:min(900px,92%);
 
     margin:auto;
 
@@ -56,144 +81,200 @@ body{
 
 }
 
+
+
 .hero{
 
     text-align:center;
 
-    margin-bottom:50px;
+    margin-bottom:70px;
 
 }
+
+
 
 .coffee{
 
-    font-size:64px;
-
-    margin-bottom:12px;
+    font-size:70px;
 
 }
 
+
+
 .hero h1{
+
+    margin-top:15px;
 
     font-family:"Cormorant Garamond",serif;
 
-    font-size:58px;
+    font-size:64px;
 
-    color:var(--gold);
+    color:var(--accent);
 
     letter-spacing:3px;
 
 }
 
+
+
+.line{
+
+    width:150px;
+
+    height:2px;
+
+    margin:20px auto;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        var(--accent),
+        transparent
+    );
+
+}
+
+
+
 .hero p{
 
-    margin-top:10px;
-
-    color:#bdbdbd;
+    color:var(--muted);
 
     font-size:18px;
 
 }
 
+
+
+/* CATEGORIAS */
+
+
 .category{
+
+    margin-bottom:60px;
+
+}
+
+
+
+.category-title{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:25px;
+
+    color:var(--accent);
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:38px;
+
+}
+
+
+
+.category-title::before,
+.category-title::after{
+
+    content:"";
+
+    height:1px;
+
+    background:#333;
+
+    flex:1;
+
+}
+
+
+
+
+/* CARDS */
+
+
+.items{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+    gap:18px;
+
+}
+
+
+
+.card{
 
     background:var(--card);
 
-    border:1px solid #2b2b2b;
+    border:1px solid #292929;
 
-    border-radius:18px;
+    border-radius:20px;
 
-    margin-bottom:18px;
-
-    overflow:hidden;
+    padding:22px;
 
     transition:.3s;
 
 }
 
-.category:hover{
 
-    border-color:var(--gold-soft);
 
-    box-shadow:0 0 30px rgba(115, 55, 212, 0.12);
+.card:hover{
 
-}
+    transform:translateY(-5px);
 
-.category-header{
+    border-color:var(--accent);
 
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    padding:22px 24px;
-
-    cursor:pointer;
+    box-shadow:
+    0 0 25px rgba(190,105,247,.18);
 
 }
 
-.category-title{
 
-    font-size:22px;
 
-    color:var(--gold);
+.card h3{
 
-    font-family:"Cormorant Garamond",serif;
+    font-size:20px;
 
-}
-
-.arrow{
-
-    width:18px;
-
-    height:18px;
-
-    transition:.35s;
+    margin-bottom:12px;
 
 }
 
-.arrow svg{
 
-    fill:var(--gold);
 
-}
+.card p{
 
-.category.open .arrow{
-
-    transform:rotate(180deg);
-
-}
-
-.items{
-
-    max-height:0;
-
-    overflow:hidden;
-
-    transition:max-height .45s ease;
-
-}
-
-.item{
-
-    padding:20px 24px;
-
-    border-top:1px solid #262626;
-
-}
-
-.item h3{
-
-    font-size:18px;
-
-    margin-bottom:8px;
-
-}
-
-.item p{
-
-    color:#bdbdbd;
+    color:var(--muted);
 
     line-height:1.6;
+
+}
+
+
+
+.badge{
+
+    display:inline-block;
+
+    margin-top:15px;
+
+    padding:5px 12px;
+
+    border-radius:20px;
+
+    color:var(--accent);
+
+    border:1px solid var(--accent-soft);
+
+    font-size:12px;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
 
 }

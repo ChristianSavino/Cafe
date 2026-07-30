@@ -1,56 +1,75 @@
 fetch("menu.json")
-.then(r=>r.json())
-.then(menu=>{
 
-    const root=document.getElementById("menu");
+.then(response => response.json())
+
+.then(menu => {
+
+
+    const container = document.getElementById("menu");
+
 
     Object.entries(menu).forEach(([categoria,bebidas])=>{
+
 
         const section=document.createElement("section");
 
         section.className="category";
 
+
         section.innerHTML=`
 
-            <div class="category-header">
-
-                <div class="category-title">${categoria}</div>
-
-                <div class="arrow">
-
-                    <svg viewBox="0 0 24 24">
-
-                        <path d="M7 10l5 5 5-5"/>
-
-                    </svg>
-
-                </div>
-
-            </div>
+            <h2 class="category-title">
+                ${categoria}
+            </h2>
 
             <div class="items"></div>
 
         `;
 
+
         const items=section.querySelector(".items");
 
-        bebidas.forEach(b => {
-            items.insertAdjacentHTML("beforeend", `
-                <div class="item">
-                    <h3>${b.nombre}</h3>
-                    ${b.descripcion ? `<p>${b.descripcion}</p>` : ""}
-                </div>
-            `);
+
+        bebidas.forEach(bebida=>{
+
+
+            const card=document.createElement("article");
+
+            card.className="card";
+
+
+            card.innerHTML=`
+
+                <h3>${bebida.nombre}</h3>
+
+                <p>
+                    ${bebida.descripcion ?? ""}
+                </p>
+
+
+                ${
+                    bebida.especial
+                    ?
+                    `<span class="badge">
+                        Especial de la casa
+                    </span>`
+                    :
+                    ""
+                }
+
+            `;
+
+
+            items.appendChild(card);
+
+
         });
 
-        section.querySelector(".category-header").onclick = () => {
-            const items = section.querySelector(".items");
-            const isOpen = section.classList.toggle("open");
-            items.style.maxHeight = isOpen ? items.scrollHeight + "px" : "0";
-        };
 
-        root.append(section);
+        container.appendChild(section);
+
 
     });
+
 
 });
