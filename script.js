@@ -34,26 +34,19 @@ fetch("menu.json")
 
         const items=section.querySelector(".items");
 
-        bebidas.forEach(b=>{
-
-            items.innerHTML+=`
-
+        bebidas.forEach(b => {
+            items.insertAdjacentHTML("beforeend", `
                 <div class="item">
-
                     <h3>${b.nombre}</h3>
-
                     ${b.descripcion ? `<p>${b.descripcion}</p>` : ""}
-
                 </div>
-
-            `;
-
+            `);
         });
 
-        section.querySelector(".category-header").onclick=()=>{
-
-            section.classList.toggle("open");
-
+        section.querySelector(".category-header").onclick = () => {
+            const items = section.querySelector(".items");
+            const isOpen = section.classList.toggle("open");
+            items.style.maxHeight = isOpen ? items.scrollHeight + "px" : "0";
         };
 
         root.append(section);
