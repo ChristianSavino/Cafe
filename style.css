@@ -46,19 +46,19 @@ body{
 
         radial-gradient(
             circle at top,
-            rgba(31,21,44,.85) 0%,
+            rgba(31,21,44,.75) 0%,
             transparent 45%
         ),
 
         radial-gradient(
             circle at bottom,
-            rgba(26,26,26,.75) 0%,
-            rgba(9,9,9,.85) 70%
+            rgba(26,26,26,.55) 0%,
+            rgba(9,9,9,.70) 70%
         ),
 
         linear-gradient(
             rgba(9,9,9,.55),
-            rgba(9,9,9,.80)
+            rgba(9,9,9,.70)
         ),
 
         url("img/bar.jpg");
