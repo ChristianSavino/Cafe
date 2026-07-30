@@ -1,0 +1,90 @@
+{
+    "☕ Café": [
+        {
+            "nombre": "Espresso",
+            "descripcion": "Un café corto e intenso."
+        },
+        {
+            "nombre": "Americano",
+            "descripcion": "Espresso con agua caliente."
+        },
+        {
+            "nombre": "Cortado",
+            "descripcion": "Espresso o Americano (a elección) cortado con un poco de leche."
+        },
+        {
+            "nombre": "Con leche",
+            "descripcion": "Espresso o Americano, con leche en partes iguales."
+        },
+        {
+            "nombre": "Latte",
+            "descripcion": "Espresso con leche vaporizada."
+        },
+        {
+            "nombre": "Capuccino",
+            "descripcion": "Espresso con espuma de leche."
+        },
+        {
+            "nombre": "Mocha",
+            "descripcion": "Espresso con chocolate."
+        },
+        {
+            "nombre": "Keru's Mocha",
+            "descripcion": "Espresso con chocolate blanco derretido en leche."
+        },
+        {
+            "nombre": "Baileys'",
+            "descripcion": "Espresso con licor de Baileys."
+        }
+    ],
+    "🍵 Té": [
+        {
+            "nombre": "Negro",
+            "descripcion": "Presentación en saquito."
+        },
+        {
+            "nombre": "Digestivo",
+            "descripcion": "Presentación en saquito."
+        },
+        {
+            "nombre": "Sweet Kisses",
+            "descripcion": "Té negro en hebras con chocolate, dulce de leche y corazoncitos de azucar."
+        },
+        {
+            "nombre": "Jazmín",
+            "descripcion": "en hebras."
+        }
+    ],
+    "🍶 Tragos": [
+        {
+            "nombre": "Baileys'",
+            "descripcion": "Shot."
+        },
+        {
+            "nombre": "Sheridan's",
+            "descripcion": "Shot."
+        },
+        {
+            "nombre": "Red Label",
+            "descripcion": "Shot."
+        },
+        {
+            "nombre": "Campari",
+            "descripcion": "25% Campari, 75% Jugo de naranja."
+        },
+        {
+            "nombre": "Belu's Terma Limón",
+            "descripcion": "40% Terma, 60% Soda."
+        }
+    ],
+    "🥛 Otros": [
+        {
+            "nombre": "Gaseosa",
+            "descripcion": "Preguntar disponibilidad."
+        },
+        {
+            "nombre": "Agua",
+            "descripcion": "Good old agua."
+        }
+    ]
+}
