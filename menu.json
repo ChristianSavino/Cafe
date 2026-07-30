@@ -77,6 +77,20 @@
             "descripcion": "40% Terma, 60% Soda."
         }
     ],
+    "🧉 Mate": [
+        {
+            "nombre": "Clásico",
+            "descripcion": "Amargo o dulce."
+        },
+        {
+            "nombre": "de Yuyos",
+            "descripcion": "Yerba Buenas y Santas con posibilidad de combinar con yerba tradicional."
+        },
+        {
+            "nombre": "Con coco",
+            "descripcion": "Mix de yerba común y yuyos con coco rallado."
+        }
+    ],
     "🥛 Otros": [
         {
             "nombre": "Gaseosa",
